@@ -1,0 +1,81 @@
+<html>  
+    <body> 
+        <html> 
+<body> 
+<h2> A function</h2>
+<script> 
+function msg(){ 
+alert("HI! this is message 1");  
+} 
+</script> 
+<input type="button" onclick="msg()" value="call for message 1"/> 
+
+<h2> An anonymous function</h2>
+  <button id="myButton">Click Me</button>
+  <script>
+    const greet = function() {
+      alert("Hello! This is an example of an  anonymous function.");
+    };
+    document.getElementById("myButton").addEventListener("click", function() {
+      greet(); 
+    });
+  </script>
+
+<h2>A named function</h2>
+  <button onclick="showMsg()">Click Me</button>
+  <script>
+    function showMsg() {
+      alert("Hello! This is an Example of named function.");
+    }
+  </script>
+
+<h2>Arrow Function </h2>
+  <button onclick="sayHello()">Click Me</button>
+
+  <script>
+    const sayHello = () => {
+      alert("Hello from an arrow function!");
+    };
+  </script>
+
+<h2>Click Console for Higher-Order Function </h2>
+  <script>
+    function doOperation(a, b, operation) {
+      return operation(a, b);
+    }
+    const add = (x, y) => x + y;
+
+    const result = doOperation(5, 3, add);
+    console.log("Result from higher-order function:", result); 
+  </script>
+
+<h2>Callback Function Example</h2>
+  <button onclick="greetUser()">Click to Greet</button>
+  <script>
+    function sayhello(name) {
+      alert("Hello, " + name + "!");
+    }
+    function greeting(callback) {
+      const userName = "Saadia";
+      callback(userName); 
+    }
+
+    function greetUser() {
+      greeting(sayhello); 
+    }
+  </script>
+
+<h2>Check the Console for IIFE Output</h2>
+  <script>
+    (function() {
+      console.log("This runs immediately using an IIFE!");
+    })();
+
+    (() => {
+      console.log("Arrow function IIFE executed!");
+    })();
+  </script>
+</body> 
+</html>  
+  </body> 
+</html> 

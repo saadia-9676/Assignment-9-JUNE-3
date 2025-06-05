@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+    <h2>JavaScript String Methods</h2>
+
+    <h3>1. indexOf() Method</h3>
+    <script>
+        var s1 = "javascript from ethnus indexof";
+        var n = s1.indexOf("from");
+        document.write("indexOf('from') result: " + n + "<br>");
+    </script>
+
+    <h3>2. lastIndexOf() Method</h3>
+    <script>
+        var s1 = "javascript from ethnus indexof";
+        var n = s1.lastIndexOf("java");
+        document.write("lastIndexOf('java') result: " + n + "<br>");
+    </script>
+
+    <h3>3. toLowerCase() Method</h3>
+    <script>
+        var s1 = "JavaScript toLowerCase Example";
+        var s2 = s1.toLowerCase();
+        document.write("toLowerCase result: " + s2 + "<br>");
+    </script>
+
+    <h3>4. toUpperCase() Method</h3>
+    <script>
+        var s1 = "JavaScript toUpperCase Example";
+        var s2 = s1.toUpperCase();
+        document.write("toUpperCase result: " + s2 + "<br>");
+    </script>
+
+    <h3>5. slice() Method</h3>
+    <script>
+        var s1 = "GameOfThrone";
+        var s2 = s1.slice(2, 5);
+        document.write("slice(2,5) result: " + s2 + "<br>");
+    </script>
+
+    <h3>6. trim() Method</h3>
+    <script>
+        var s1 = "     javascript trim     ";
+        var s2 = s1.trim();
+        document.write("trim result: '" + s2 + "'<br>");
+    </script>
+
+    <h3>7. split() Method</h3>
+    <script>
+        var str = "This is Task By Saadia ";
+        var result = str.split(" ");
+        document.write("split(\" \") result: " + result.join(", ") + "<br>");
+    </script>
+
+</body>
+</html>
